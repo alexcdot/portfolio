@@ -92,8 +92,10 @@ ul.table-of-contents li.logo a:hover {
   font-weight: 200;
 }
 ul.side-nav.fixed li.logo {
+  /* 
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
+  */
   box-sizing: content-box;
   min-height: 90px;
   padding: 30px 30px 40px;
@@ -140,7 +142,7 @@ h3 {
   height: 100vh;
 }
 #intro.section {
-  background: url(../../assets/img/andrew-borstein-2a.jpg) no-repeat top
+  background: url(../../assets/img/alex-cui-short.jpg) no-repeat top
     center/cover;
   position: relative;
 }
@@ -442,6 +444,18 @@ small {
     margin: 0 auto;
   }
   #intro.section {
-    background-position-x: 30%;
+    background-position-x: 70%;
   }
+}
+
+.project-card-content {
+  height: 15em;
+}
+
+.project-card {
+  height: 470px;
+}
+
+.project-card-content {
+  height: 170px;
 }

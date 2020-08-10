@@ -3,7 +3,7 @@ layout: layouts/portfolio
 ---
 <!-- Navigation Menu-->
 <nav class="hide-on-small-only">
-  <ul class="side-nav fixed section table-of-contents">
+  <ul class="side-nav fixed section table-of-contents" id="vanta">
     <li class="logo">
       <a
         id="logo-container"
@@ -12,8 +12,8 @@ layout: layouts/portfolio
         class="brand-logo teal-text"
       >
         <h1>
-          Andrew Borstein<span class="brown-text light"
-            >Full Stack Developer</span
+          Alex Cui<span class="brown-text light"
+            >Machine Learning Researcher and Engineer</span
           >
         </h1></a
       >
@@ -75,18 +75,19 @@ layout: layouts/portfolio
         ><i class="mdi-content-mail small"></i><span>Contact</span></a
       >
     </li>
-    <li class="bold">
+    <!-- <li class="bold">
       <a
         aria-label="Navigate to the Blog section"
         href="#blog"
         class="waves-effect waves-dark yellow-text text-darken-2"
         ><i class="mdi-content-create small"></i><span>Blog</span></a
       >
-    </li>
+    </li> -->
     <li class="bold">
       <a
-        aria-label="Open Andrew's resume in a new tab"
-        href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
+        id="resume-sidebar"
+        aria-label="Open Alex's resume in a new tab"
+        href="https://drive.google.com/file/d/1meEgtafgoVaoXlQ9ZuNnykZfAhXyMdq0/view?usp=sharing"
         target="_blank"
         class="waves-effect waves-dark grey-text text-darken-3"
         ><i class="mdi-action-description small"></i><span>Resume</span></a
@@ -108,8 +109,8 @@ layout: layouts/portfolio
       aria-label="Navigate to the beginning of the page"
       href="#main"
       class="teal-text"
-      >Andrew Borstein</a
-    ><span class="brown-text light">Full Stack Developer</span>
+      >Alex Cui</a
+    ><span class="brown-text light">Machine Learning Researcher and Engineer</span>
   </div>
 </nav>
 <nav class="hide-on-large only">
@@ -171,18 +172,18 @@ layout: layouts/portfolio
         ><i class="mdi-content-mail small"></i><span>Contact</span></a
       >
     </li>
-    <li class="bold">
+    <!-- <li class="bold">
       <a
-        aria-label="Navigate to the Contact section"
+        aria-label="Navigate to the Blog section"
         href="#blog"
         class="waves-effect waves-dark yellow-text text-dark-3"
         ><i class="mdi-content-mail small"></i><span>Blog</span></a
       >
-    </li>
+    </li> -->
     <li class="bold">
       <a
-        aria-label="Open Andrew's Resume in a new tab"
-        href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
+        aria-label="Open Alex's Resume in a new tab"
+        href="https://drive.google.com/file/d/1meEgtafgoVaoXlQ9ZuNnykZfAhXyMdq0/view?usp=sharing"
         target="_blank"
         class="waves-effect waves-dark grey-text text-darken-3"
         ><i class="mdi-action-description small"></i><span>Resume</span></a
@@ -196,8 +197,8 @@ layout: layouts/portfolio
     <div class="overlay"></div>
     <div class="container">
       <h2>
-        I want to <span class="teal">make things</span><br />that
-        <span class="underline">make a difference</span>.
+        I turn <span class="teal">signal</span><br />into
+        <span class="underline">insight</span>.
       </h2>
     </div>
   </section>
@@ -206,37 +207,28 @@ layout: layouts/portfolio
     <div class="container flow-text">
       <blockquote>
         <h2>
-          Mission-driven full stack developer with a passion for thoughtful
-          UI design, collaboration, and teaching.
+          Endlessly curious creator with a passion for deploying machine learning to solve impactful real-world issues.
         </h2>
       </blockquote>
       <p>
-        I’ve always sought out opportunities and challenges that are
-        meaningful to me. Although my professional path has taken many
-        twists and turns — from touring and recording artist, to employee of
-        the year at a non-profit, to dean's scholar at UPenn, to small
-        business owner and entrepreneur — I've never stopped engaging my
-        passion to help others and solve problems.
+        I enjoy using the power of data-based problem solving to tackle both global problems and new challenges where we're just hit the tip of the iceberg.
       </p>
-      <p>
-        As a web developer, I enjoy using my obsessive attention to detail,
-        my unequivocal love for making things, and my mission-driven work
-        ethic to literally change the world. That's why I’m excited to make
-        a big impact at a high growth company.
+      </p>
+        I believe in having a T-shaped skill set - being able to dig deep and develop new machine learning approaches, while also having a versatile full-stack skill set to bring ideas into life.
       </p>
       <p>
         <strong>Current Focus</strong>:&nbsp;<a
-          aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/"
-          >Accessibility</a
+          aria-label='Navigate to the experience "Uber ATG"'
+          href="#uber-atg-card"
+          >Autonomous Robotics</a
         >&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/"
-          >React</a
+          aria-label='Navigate to the research "Reisman Lab"'
+          href="#experience"
+          >Synthetic Chemistry and ML</a
         >&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/"
-          >Design Systems</a
+          aria-label='Navigate to the article "Open Mind"'
+          href="#open-mind-card"
+          >Misinformation and NLP</a
         >
       </p>
     </div>
@@ -244,14 +236,16 @@ layout: layouts/portfolio
   <section id="experience" class="section scrollspy">
     <h3 class="page-title white-text teal">Experience</h3>
     <div class="container">
+      <!-- Uber ATG -->
+      <a id="uber-atg-card">
       <div class="card">
         <div class="card-content">
           <div class="row">
             <div class="col s12 m2">
-              <a href="http://wespire.com" target="_blank"
+              <a href="https://www.uber.com/ca/en/atg/" target="_blank"
                 ><img
-                  alt="WeSpire logo"
-                  src="/assets/img/wespire-logo.jpg"
+                  alt="Uber ATG logo"
+                  src="assets/img/uber-logo.png"
                   class="responsive-img center-block"
               /></a>
             </div>
@@ -259,70 +253,97 @@ layout: layouts/portfolio
               <p>
                 <span class="card-title"
                   ><a
-                    href="http://wespire.com"
+                    href="https://www.uber.com/ca/en/atg/"
                     target="_blank"
                     class="teal-text hoverline"
-                    >Wespire</a
+                    >Uber ATG</a
                   ></span
                 >
               </p>
             </div>
           </div>
-          <div class="role brown-text">Full-Stack Software Developer</div>
+          <div class="role brown-text">Research Scientist Intern</div>
           <p>
             <em class="grey-text"
-              >SaaS platform that enables enterprise companies to build,
-              run, and measure their positive impact campaigns</em
+              >Making self-driving cars a reality</em
             >
           </p>
-          <h6>Develop Product</h6>
           <ul>
             <li>
-              Contribute core features across entire stack (20k+ lines of
-              code, 250+ pulls)
+              Developed deep learning models in Pytorch to
+              predict more diverse motion prediction outcomes to
+              better anticipate edge cases for self driving vehicles
+              without worsening prediction speed or quality
             </li>
             <li>
-              Lead front-end development, creating and documenting app-wide
-              design system
-            </li>
-            <li>
-              Oversee transition from page-based styles to modular component
-              styles
-            </li>
-            <li>Guide best practices around accessible, semantic UI/UX</li>
-            <li>
-              Tools: Ruby, Rails, PostgreSQL // React, JS, jQuery // Sass //
-              HTML, JSX, Haml
-            </li>
-          </ul>
-          <h6>Accomplishments</h6>
-          <ul>
-            <li>
-              Dramatically increased speed of UI development using atomic,
-              scalable CSS
-            </li>
-            <li>
-              Built tool to convert HRIS data into user accounts to simplify
-              onboarding
-            </li>
-            <li>
-              Implemented inline @tagging feature to increase app
-              share-ability
+              Optimized graph neural network’s loss function and
+              sampling procedure
             </li>
           </ul>
         </div>
         <div class="card-action">
-          <span>Jan 2016 - Present | Boston, MA</span>
+          <span>June 2020 - Sept 2020 | Toronto, CA</span>
+        </div>
+      </div>
+      </a>
+      <!-- Facebook -->
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m2">
+              <a href="http://facebook.com" target="_blank"
+                ><img
+                  alt="Facebook logo"
+                  src="assets/img/facebook-logo.png"
+                  class="responsive-img center-block"
+              /></a>
+            </div>
+            <div class="col s12 m10">
+              <p>
+                <span class="card-title"
+                  ><a
+                    href="http://facebook.com"
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >Facebook</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="role brown-text">Machine Learning Engineer</div>
+          <p>
+            <em class="grey-text"
+              >Ads Growth Team attracts and assists new SMB advertisers</em
+            >
+          </p>
+          <ul>
+            <li>
+              I built a dynamic budget allocator for products that purchase millions of ads a day to optimize advertiser ROI.
+            </li>
+            <li>
+              I added new data features and pipelines to improve our ads ranking neural net, increasing its conversion rate while increasing ad engagement.
+            </li>
+            <li>
+              I discovered and fixed a major issue with a multimillion dollar ads ranking model. These neural nets rank Facebook notifications that aim to convert businesses to paying advertisers and reach millions of users per day.
+            </li>
+            <li>
+              Finally, I created a social good project with 3 other engineers that won the Judge’s Choice award (given to top 3 teams) at Facebook’s largest-ever hackathon
+            </li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <span>June 2019 - Sept 2010 | Menlo Park, CA</span>
         </div>
       </div>
       <div class="card">
         <div class="card-content">
           <div class="row">
             <div class="col s12 m2">
-              <a href="http://wespire.com" target="_blank"
+              <a href="https://getkuna.com/" target="_blank"
                 ><img
-                  alt="WeSpire logo"
-                  src="/assets/img/wespire-logo.jpg"
+                  alt="Kuna logo"
+                  src="assets/img/kuna-logo.png"
                   class="responsive-img center-block"
               /></a>
             </div>
@@ -330,340 +351,52 @@ layout: layouts/portfolio
               <p>
                 <span class="card-title"
                   ><a
-                    href="http://wespire.com"
+                    href="https://getkuna.com"
                     target="_blank"
                     class="teal-text hoverline"
-                    >Wespire</a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="role brown-text">QA Developer</div>
-          <p>
-            <em class="grey-text"
-              >SaaS platform that enables enterprise companies to build,
-              run, and measure their positive impact campaigns</em
-            >
-          </p>
-          <ul>
-            <li>
-              Improved accuracy, coverage, and speed of automated tests
-            </li>
-            <li>
-              Created an automated ‘smoke test’ using Ruby and the
-              CrossBrowserTesting API
-            </li>
-            <li>
-              Streamlined CLI and deployment, saving 10/hrs week and
-              increasing releases 5x
-            </li>
-          </ul>
-        </div>
-        <div class="card-action">
-          <span>May 2015 - Dec 2015 | Boston, MA</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m2">
-              <a href="https://www.startupinstitute.com/" target="_blank"
-                ><img
-                  alt="Startup Institute logo"
-                  src="/assets/img/si-logo.png"
-                  class="responsive-img center-block"
-              /></a>
-            </div>
-            <div class="col s12 m10">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="https://www.startupinstitute.com/intro-courses/web-design/"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Intro Course</a
+                    >Kuna Systems</a
                   ></span
                 >
               </p>
             </div>
           </div>
           <div class="role brown-text">
-            Instructor & Curriculum Designer
+            Machine Learning Engineer
           </div>
           <p>
             <em class="grey-text"
-              >8-week course for students enrolled in the Fundamentals
-              Classes Intro to Web Design</em
+              >Smart security cameras with machine learning-enabled detection</em
             >
           </p>
           <ul>
             <li>
-              Teaching the basics of HTML, CSS, and the principles of
-              responsive design.
+              At Kuna, I improved the speed, accuracy and cost of our machine learning cloud.
             </li>
             <li>
-              Currently redesigning and building a new, improved Web Design
-              curriculum to be implemented across all SI channels in 2018
-            </li>
-          </ul>
-          <h6>Accomplishments</h6>
-          <ul>
-            <li>
-              Increased the average student retention rate from less than
-              40% to more than 95%
+              I deployed an autoscaling, fault-tolerant AWS server scaler in production, decreasing company-wide cloud GPU costs by 60%.
             </li>
             <li>
-              Doubled the average amount of students that move from
-              Funamdentals Classes to the Full-Time program
+              I sped up CNNs by 3x with quantization to achieve real-time detection on home security cameras.
+            </li>
+            <li>
+              I built a statistically balanced dataset of 100,000 images and retrained models to reduce false and missed detections for users by 25%.
             </li>
           </ul>
         </div>
         <div class="card-action">
-          <span>Jan 2016 - Present | Boston, MA</span>
+          <span>June 2018 - Sept 2018 | San Bruno, CA</span>
         </div>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m2">
-              <a href="https://www.startupinstitute.com/" target="_blank"
-                ><img
-                  alt="Startup Institute logo"
-                  src="/assets/img/si-logo.png"
-                  class="responsive-img center-block"
-              /></a>
-            </div>
-            <div class="col s12 m10">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="https://www.eventbrite.com/e/boston-community-class-building-a-webpage-with-bootstrap-tickets-29157196961"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Community Class</a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="role brown-text">Instructor</div>
-          <p>
-            <em class="grey-text"
-              >One-off community class open to the public and sponsored by
-              Resilient Coders</em
-            >
-          </p>
-          <ul>
-            <li>
-              Taught an introductory seminar covering HTML, CSS, and
-              primarily Bootstrap, with a one-page website deliverable
-            </li>
-          </ul>
-        </div>
-        <div class="card-action"><span>Nov 2016 | Boston, MA</span></div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m2">
-              <a href="http:/startupinstitute.com" target="_blank"
-                ><img
-                  alt="Startup Institute logo"
-                  src="/assets/img/si-logo.png"
-                  class="responsive-img center-block"
-              /></a>
-            </div>
-            <div class="col s12 m10">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="https://www.startupinstitute.com/courses/"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Full-Time Program</a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="role brown-text">Instructor</div>
-          <p>
-            <em class="grey-text"
-              >2-day intensive and interactive courses and lab work with
-              students in the Full Time program.</em
-            >
-          </p>
-          <h6>Web Design topics</h6>
-          <ul>
-            <li>Intro to HTML/CSS</li>
-            <li>Fonts, Images,</li>
-            <li>Responsive Design</li>
-            <li>CSS Frameworks</li>
-          </ul>
-          <h6>Web Development topics</h6>
-          <ul>
-            <li>Intro to MVC Rails App</li>
-            <li>Rails Associations</li>
-            <li>Basic Layout and CSS Best Practices</li>
-          </ul>
-        </div>
-        <div class="card-action">
-          <span>Jun 2015 - Present | Boston, MA</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m2">
-              <a href="http:/startupinstitute.com" target="_blank"
-                ><img
-                  alt="Startup Institute logo"
-                  src="/assets/img/si-logo.png"
-                  class="responsive-img center-block"
-              /></a>
-            </div>
-            <div class="col s12 m10">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="http:/startupinstitute.com"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Startup Institute</a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="role brown-text">Web Dev Student</div>
-          <p>
-            <em class="grey-text"
-              >Competitive , 8-week immersive program that helps individuals
-              to develop the skills, mindset, and network to be high-impact
-              at a high-growth company.</em
-            >
-          </p>
-          <ul>
-            <li>Technology - Ruby on Rails, Git, AWS, Heroku, Node.js</li>
-            <li>
-              Practices - Agile development tactics, test-driven
-              development, mobile-first methodology
-            </li>
-          </ul>
-        </div>
-        <div class="card-action">
-          <span>Feb 2014 - Apr 2014 | Boston, MA</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m2">
-              <a href="http://brownborgstudios.com" target="_blank"
-                ><img
-                  alt="Brownborg Studios logo"
-                  src="/assets/img/brownborg-logo.png"
-                  class="responsive-img center-block"
-              /></a>
-            </div>
-            <div class="col s12 m10">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="http://brownborgstudios.com"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Brownborg Studios</a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="role brown-text">Founder & Developer</div>
-          <p>
-            <em class="grey-text"
-              >Small web development and design studio for businesses,
-              non-profits, and individuals</em
-            >
-          </p>
-          <ul>
-            <li>
-              Creating easy-to-use CMS websites for clients for local and
-              international clients
-            </li>
-            <li>
-              Managing all accounting, communication, and project management
-            </li>
-            <li>
-              Generated over $40k in revenue within first year of business,
-              without marketing or promotion
-            </li>
-          </ul>
-        </div>
-        <div class="card-action">
-          <span>July 2010 - Present | Providence, RI</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m2">
-              <a href="http://equalaccessri.org" target="_blank"
-                ><img
-                  alt="Equal Access RI logo"
-                  src="/assets/img/equal-access-ri.png"
-                  class="responsive-img center-block"
-              /></a>
-            </div>
-            <div class="col s12 m10">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="http://equalaccessri.org"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Equal Access RI</a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="role brown-text">Creative Strategist</div>
-          <p>
-            <em class="grey-text"
-              >Accessibility consultancy and advocacy project founded by
-              individual with Cerebral Palsy</em
-            >
-          </p>
-          <ul>
-            <li>
-              Mentored the founder and led a small team in business and
-              creative strategies
-            </li>
-            <li>
-              Designed visual branding, wrote copy, and developed website
-            </li>
-            <li>
-              Garnered a front-page Providence Journal article within first
-              9 months
-            </li>
-          </ul>
-        </div>
-        <div class="card-action">
-          <span>Mar 2014 - Feb 2015 | Pawtucket, RI</span>
-        </div>
-      </div>
+      <!-- Open Mind -->
+      <a id="open-mind-card">
       <div class="card">
         <div class="card-content">
           <div class="row">
             <div class="col s12 m2">
               <a
-                href="https://www.centerforautismresearch.org/"
-                target="_blank"
                 ><img
-                  alt="Equal Access RI logo"
-                  src="/assets/img/chop.jpg"
+                  alt="Open Mind logo"
+                  src="assets/img/open-mind-logo.jpg"
                   class="responsive-img center-block"
               /></a>
             </div>
@@ -671,98 +404,46 @@ layout: layouts/portfolio
               <p>
                 <span class="card-title"
                   ><a
-                    href="https://www.centerforautismresearch.org/"
-                    target="_blank"
                     class="teal-text hoverline"
-                    >Center for Autism Research</a
+                    >Open Mind</a
                   ></span
                 >
               </p>
             </div>
           </div>
-          <div class="role brown-text">Research Assistant</div>
+          <div class="role brown-text">Co-founder, Lead Engineer</div>
           <p>
             <em class="grey-text"
-              >Joint center of The Children’s Hospital of Philadelphia and
-              the University of Pennsylvania</em
+              >Web extension that generates a politically balanced, personalized news feeds, to improve media literacy.</em
             >
           </p>
           <ul>
             <li>
-              Observed clinical evaluations of children with ASD provided
-              support to clinicians
+              I built the ML + backend for a chrome extension with 100s of users, using Node.js and Flask for the backend, React for the frontend, and Spacy and NLTK for NLP.
             </li>
-            <li>Developed new data entry forms for research intake</li>
+            <li>
+              I presented our user studies on how to deal with polarization at Capitol Hill, Facebook's misinformation team, and the Department of State
+            </li>
+            <li>
+              I and my team was interviewed by Fox News, AP, NPR and CTV.
+            </li>
+            <li>
+              I managed and mentored a team of 3 developers to launch new features.
+            </li>
+            
           </ul>
         </div>
-        <div class="card-action">
-          <span>Sep 2011 - Apr 2013 | Philadelphia, PA</span>
-        </div>
+        <div class="card-action"><span>Nov 2017 - Present | Pasadena, CA</span></div>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m2">
-              <a href="http://rhdri.org" target="_blank"
-                ><img
-                  alt="RHD-RI logo"
-                  src="/assets/img/rhdri-logo.png"
-                  class="responsive-img center-block"
-              /></a>
-            </div>
-            <div class="col s12 m10">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="http://rhdri.org"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >RHD-RI</a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="role brown-text">Direct Support Professional</div>
-          <p>
-            <em class="grey-text"
-              >Non-profit, arts-based day program for adults with
-              disabilities
-            </em>
-          </p>
-          <ul>
-            <li>
-              Supported over forty clients daily in a fast-paced, team
-              environment
-            </li>
-            <li>
-              Created new method for organizing staff information and
-              clients’ goals, still in use today
-            </li>
-            <li>
-              Awarded Employee of the Year out of 30+ employees after only
-              one year of service
-            </li>
-            <li>
-              Awarded Most Valuable Staff at Winter Art Show for highest
-              sales and unique client product
-            </li>
-          </ul>
-        </div>
-        <div class="card-action">
-          <span>Feb 2010 - Sept 2011 | Pawtucket, RI</span>
-        </div>
-      </div>
+      </a>
       <div class="card">
         <div class="card-content">
           <div class="row">
             <div class="col s12 m2">
               <a
-                href="https://www.google.com/search?q=Monty+Are+I"
-                target="_blank"
                 ><img
-                  alt="Monty Are I logo"
-                  src="/assets/img/monty-are-i-logo.png"
+                  alt="Whimmly logo"
+                  src="assets/img/whimmly-logo.png"
                   class="responsive-img center-block"
               /></a>
             </div>
@@ -770,42 +451,33 @@ layout: layouts/portfolio
               <p>
                 <span class="card-title"
                   ><a
-                    href="https://www.google.com/search?q=Monty+Are+I"
-                    target="_blank"
                     class="teal-text hoverline"
-                    >Monty Are I</a
+                    >Whimmly</a
                   ></span
                 >
               </p>
             </div>
           </div>
-          <div class="role brown-text">
-            Co-Founder &amp; Touring / Recording Artist
-          </div>
+          <div class="role brown-text">Co-founder, CTO</div>
           <p>
             <em class="grey-text"
-              >Five piece “action rock” band from Cranston, RI</em
+              >Creating plug-and-play conversational and search AI for eCommerce</em
             >
           </p>
           <ul>
             <li>
-              Built a successful and sustainable small-business with four
-              other founders
+              I developed a chatbot platform for eCommerce for a Fortune 500 company, achieving 3x higher user engagement than the industry average with patent-pending NLP models.
             </li>
             <li>
-              Wrote, produced, and recorded five albums both independently
-              and under Island/DefJam
+              I built an ML pipeline to learn consumer product word embeddings and descriptors from open source datasets.
             </li>
             <li>
-              Completed 7 full US tours, including one headlining tour
+              I deployed an autoscaling ML computing cluster and continuous deployment pipeline in AWS.
             </li>
-            <li>
-              Created, recruited and managed 2000 member promotional street
-              team
-            </li>
+            
           </ul>
         </div>
-        <div class="card-action"><span>2004 - 2010 | USA</span></div>
+        <div class="card-action"><span>Nov 2017 - Sept 2018 | Pasadena, CA</span></div>
       </div>
     </div>
   </section>
@@ -813,23 +485,22 @@ layout: layouts/portfolio
     <h3 class="page-title white-text teal">Projects</h3>
     <div class="container">
       <div class="row">
-        <!-- Interpol8r-->
+        <!-- Caltech Robotics Team-->
         <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
+          <div class="card medium project-card" style="height: 470px">
+            <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
-                alt="Screenshot of Interpol8r web app"
-                src="/assets/img/interpol8r.jpg"
+                alt="Screenshot of Caltech Robotics Team"
+                src="assets/img/flo-suspended.jpg"
                 class="activator"
               />
             </div>
-            <div class="card-content">
+            <div class="card-content project-card-content"  style="height: 170px;">
               <span class="card-title activator teal-text hoverline"
-                >Interpol8r<i class="mdi-navigation-more-vert right"></i
+                >Caltech Robotics Team<i class="mdi-navigation-more-vert right"></i
               ></span>
               <p>
-                Experimental web app with homemade recursive string
-                interpolation.
+                Building autonomous submarines for the international Robosub competition
               </p>
             </div>
             <div class="card-reveal">
@@ -837,23 +508,80 @@ layout: layouts/portfolio
                 >Accomplishments<i class="mdi-navigation-close right"></i
               ></span>
               <ul>
-                <li><strong>Ruby on Rails</strong> backend</li>
-                <li><strong>Bulma CSS</strong> frontend</li>
-                <li>String interpolation via <strong>recursion</strong></li>
-                <li><strong>Dependency free</strong> JS config</li>
+                <li>
+                  Led ML team to train performant CNNs to locate
+                  objects with our autonomous submarine in <strong>C++</strong>, <strong>ROS</strong>
+                </li>
+                <li>
+                  Trained deep generative network (CycleGAN) to synthesize test-environment data
+                  to validate detectors in new underwater conditions
+                </li>
+                <li>
+                  Deployed adaptive thresholding, homography, and
+                  SIFT in OpenCV to track props with high precision
+                </li>
+              </ul>
+              <div class="card-action"><a
+                  aria-label="Visit our CRT website"
+                  href="https://http://crt.caltech.edu/"
+                  target="_blank"
+                  data-position="top"
+                  data-tooltip="View Source"
+                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                  ><i class="fa fa-external-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Juntos -->
+        <div class="col s12 m6 l4">
+          <div class="card medium project-card" style="height: 470px;">
+            <div class="card-image waves-effect waves-block waves-light  project-card-image" style="height: unset;">
+              <img
+                alt="Screenshot of Juntos app"
+                src="assets/img/juntos-preview.gif"
+                class="activator"
+              />
+            </div>
+            <div class="card-content project-card-content" style="height: 170px;">
+              <span class="card-title activator teal-text hoverline"
+                >Juntos<i class="mdi-navigation-more-vert right"></i
+              ></span>
+              <p>
+                ML web app to generate photorealistic faces just from facial descriptors
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title brown-text"
+                >Accomplishments<i class="mdi-navigation-close right"></i
+              ></span>
+              <ul>
+                <li>
+                  Used generative adversarial network to reconstruct a face from only basic descriptions of facial features like age and hairline.
+                </li>
+                <li>
+                  Increased realism of generated faces with activation clipped
+                </li>
+                <li>
+                  Built the backend with <strong>Tensorflow</strong>, <strong>Flask</strong>, <strong>RabbitMQ</strong>
+                </li>
+                <li>
+                  Won Best Machine Learning Hack at Treehacks 2019.
+                </li>
               </ul>
               <div class="card-action">
                 <a
-                  aria-label="Visit Interpol8r web app"
-                  href="https://interpol8r.herokuapp.com/"
+                  aria-label="Visit the Juntos hackathon submission"
+                  href="https://devpost.com/software/juntos-yslqri"
                   target="_blank"
                   data-position="top"
                   data-tooltip="View Online"
                   class="btn-floating btn-large waves-effect waves-light brown tooltipped"
                   ><i class="fa fa-external-link"></i></a
                 ><a
-                  aria-label="Visit the GitHub repo for Interpol8r project"
-                  href="https://github.com/andrewborstein/interpol8r"
+                  aria-label="Visit the GitHub repo for Juntos project"
+                  href="https://github.com/doinksta/Juntos"
                   target="_blank"
                   data-position="top"
                   data-tooltip="View Source"
@@ -864,75 +592,22 @@ layout: layouts/portfolio
             </div>
           </div>
         </div>
-        <!-- BlogSpire-->
+        <!-- HyperControl -->
         <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
+          <div class="card medium project-card" style="height: 470px;">
+            <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
-                alt="Screenshot of BlogSpire web app"
-                src="/assets/img/blogspire.jpg"
+                alt=" Control example"
+                src="assets/img/hypercontrol-preview.gif"
                 class="activator"
               />
             </div>
-            <div class="card-content">
+            <div class="card-content project-card-content" style="height: 170px;">
               <span class="card-title activator teal-text hoverline"
-                >BlogSpire<i class="mdi-navigation-more-vert right"></i
+                >HyperControl<i class="mdi-navigation-more-vert right"></i
               ></span>
               <p>
-                Blogging web app created for the Engineering team at
-                WeSpire.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li><strong>Ruby on Rails</strong> backend</li>
-                <li><strong>Materialize CSS</strong> frontend</li>
-                <li>User <strong>authentication</strong> via Devise</li>
-                <li>Implemented <strong>liking functionality</strong></li>
-                <li><strong>Client-side rendering</strong> via AJAX</li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit BlogSpire web app"
-                  href="https://blogspire.herokuapp.com/"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i></a
-                ><a
-                  aria-label="Visit the GitHub repo for BlogSpire project"
-                  href="https://github.com/andrewborstein/blogspire"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Source"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Code Island-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Code Island logo"
-                src="/assets/img/code-island.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Code Island<i class="mdi-navigation-more-vert right"></i
-              ></span>
-              <p>
-                Online headquarters for the local Code for America brigade
-                in Rhode Island.
+                ML web app to generate video cloning of faces, using any pair of face images and videos without further training.
               </p>
             </div>
             <div class="card-reveal">
@@ -941,499 +616,29 @@ layout: layouts/portfolio
               ></span>
               <ul>
                 <li>
-                  Integrated “Next Meeting” via <strong>Meetup API</strong>
+                  Combined <a href="" target="_blank">First Order Model</a> and facial sentiment classifier in <strong>Pytorch</strong> to generate video clones and detect user emotions.
                 </li>
                 <li>
-                  Developed <strong>CSS and JS</strong> responsive menu
-                </li>
-                <li>Created member list via <strong>GitHub API</strong></li>
-                <li>Refreshed branding and layout</li>
-                <li>
-                  Refactored all existing code (<strong>Jekyll</strong>)
+                  Built with <strong>Flask</strong>, <strong>Bootstrap</strong>, and <strong>Javascript</strong>.
                 </li>
               </ul>
               <div class="card-action">
                 <a
-                  aria-label="Visit Code Island website"
-                  href="http://code-island.org"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i></a
-                ><a
-                  aria-label="Visit the GitHub repo for Code Island project"
-                  href="http://github.com/andrewborstein/code-island.org"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Source"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Saved By the Text-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Zach Morris from Saved by the Bell, on his clunky cell phone"
-                src="/assets/img/saved-by-the-text.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Saved By the Text<i
-                  class="mdi-navigation-more-vert right"
-                ></i
-              ></span>
-              <p>
-                Fun, TV nostalgia-themed app that sends an MMS to a user's
-                phone number.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>Built with Ruby on <strong>Rails</strong></li>
-                <li>Integrated <strong>Twilio API</strong></li>
-                <li>Designed in <strong>Bootstrap</strong></li>
-                <li><strong>Javascript</strong> input validation</li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Saved By The Test web app"
-                  href="http://savedbythetext.herokuapp.com"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i></a
-                ><a
-                  aria-label="Visit the GitHub repo for Saved By the Text project"
-                  href="http://github.com/andrewborstein/saved-by-the-text"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Source"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Skate Something-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Skate boarder catching air on a half pipe"
-                src="/assets/img/skate-something.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Skate Something<i
-                  class="mdi-navigation-more-vert right"
-                ></i
-              ></span>
-              <p>
-                Mobile-focused web app where users can explore, collect, and
-                share skate spots.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>Front-end development in <strong>Bootstrap</strong></li>
-                <li>Contributed creative strategy and UX</li>
-                <li>Built dynamic templates using <strong>Jade</strong></li>
-                <li>
-                  Worked with <strong>MVC</strong> framework,
-                  <strong>Node</strong> server
-                </li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Skate Something web app"
-                  href="http://skatesomething.com"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i></a
-                ><a
-                  aria-label="Visit the GitHub repo for Skate Something project"
+                  aria-label="Visit HyperControl devpost submission"
                   href="#"
-                  data-position="top"
-                  data-tooltip="Source is Private"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- RI WiFi-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="RI WiFi logo"
-                src="/assets/img/ri-wifi.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >RI WiFi<i class="mdi-navigation-more-vert right"></i
-              ></span>
-              <p>
-                Sortable database of WiFi-enabled spots with details for
-                laptop users.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>
-                  Ruby on <strong>Rails</strong> &amp;
-                  <strong>Bootstrap</strong>
-                </li>
-                <li><strong>Google Maps API</strong></li>
-                <li>Native Javascript <strong>geolocation</strong></li>
-                <li><strong>Dynamic CSS</strong> color coding</li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit RI WiFi web app"
-                  href="http://ri-wifi.herokuapp.com"
                   target="_blank"
                   data-position="top"
                   data-tooltip="View Online"
                   class="btn-floating btn-large waves-effect waves-light brown tooltipped"
                   ><i class="fa fa-external-link"></i></a
                 ><a
-                  aria-label="Visit the GitHub repo for RI WiFi project"
-                  href="http://github.com/andrewborstein/ri-wifi"
+                  aria-label="Visit the GitHub repo for HyperControl"
+                  href="http://github.com/alexcdot/first-order-model"
                   target="_blank"
                   data-position="top"
                   data-tooltip="View Source"
                   class="btn-floating btn-large waves-effect waves-light brown tooltipped"
                   ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Pinterest-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Cute kitten"
-                src="/assets/img/pinteresting.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Pinteresting<i class="mdi-navigation-more-vert right"></i
-              ></span>
-              <p>
-                Lite Pinterest clone, where users can 'pin' photos,
-                especially those of cats.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>
-                  Ruby on <strong>Rails</strong> &amp;
-                  <strong>Bootstrap</strong>
-                </li>
-                <li>Image upload with <strong>AWS</strong></li>
-                <li><strong>jQuery</strong> Masonry effect</li>
-                <li>User Authentication with <strong>Devise</strong></li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Pinteresting web app"
-                  href="http://asb-pinteresting.herokuapp.com"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i></a
-                ><a
-                  aria-label="Visit the GitHub repo for Pinteresting project"
-                  href="http://github.com/andrewborstein/pinteresting"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Source"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Shelter Finder-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Screenshot of Google map with pins on it"
-                src="/assets/img/shelter-finder.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Shelter Finder<i class="mdi-navigation-more-vert right"></i
-              ></span>
-              <p>
-                Web app that helps Boston teens find the nearest available
-                short-term housing.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>Ruby on <strong>Rails</strong> backend API</li>
-                <li>
-                  <strong>AJAX</strong> query of Rails <strong>JSON</strong>
-                </li>
-                <li>Custom <strong>Google Maps API</strong> integration</li>
-                <li>Automatic location/distance calculation</li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Sehlter Finder website"
-                  href="http://shelterfinder.herokuapp.com"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i></a
-                ><a
-                  aria-label="Visit the GitHub repo for Shelter Finder project"
-                  href="http://github.com/andrewborstein/youth-shelter-finder"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Source"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Custom Social Feed-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Chandon logo"
-                src="/assets/img/chandon.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Custom Social Feed<i
-                  class="mdi-navigation-more-vert right"
-                ></i
-              ></span>
-              <p>
-                AJAX Twitter and Instagram feed of specific #hashtag posts.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>Fully customized <strong>jQuery</strong> plugin</li>
-                <li>
-                  Integrates <strong>Twitter and Instagram API</strong>
-                </li>
-                <li>Matches Chandon's exact branding</li>
-                <li>Built into custom <strong>Tumblr</strong> theme</li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Chandon Tumblr website"
-                  href="http://chandonusa.tumblr.com/pour-on-the-fun"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio Madlibs-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Andrew playfully posing with face half covered by laptop"
-                src="/assets/img/madlibs.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Portfolio MadLibs<i
-                  class="mdi-navigation-more-vert right"
-                ></i
-              ></span>
-              <p>
-                Have fun with my personal profile by replacing random words.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>Custom <strong>jQuery</strong> script</li>
-                <li>Hover and click actions</li>
-                <li>Pulls from random word array</li>
-                <li>Hours of fun!</li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Portfolio Madlibs website"
-                  href="http://andrewborstein.github.io/portfolio-madlibs/andrew.html"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i></a
-                ><a
-                  aria-label="Visit the GitHub repo for the Portfolio Madlibs project"
-                  href="http://github.com/andrewborstein/portfolio-madlibs"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Source"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Cidewalk for Etsy-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Cidewalk logo"
-                src="/assets/img/cidewalk.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Cidewalk for Etsy<i
-                  class="mdi-navigation-more-vert right"
-                ></i
-              ></span>
-              <p>
-                UI redesign of the popular mobile ad platform, styled for
-                Etsy users.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li>Restyled UI, design, and branding</li>
-                <li>Reorganized user process and flow</li>
-                <li>
-                  Built with <strong>Angular</strong> and
-                  <strong>Bootstrap</strong>
-                </li>
-                <li>
-                  <a aria-label="" href="http://app.cidewalk.com"
-                    >Original &amp;&nbsp;</a
-                  ><a aria-label="" href="http://etsy.cidewalk.com"
-                    >Redesign</a
-                  >
-                </li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Cidewalk web app"
-                  href="https://etsy.cidewalk.com"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Brownborg Studios-->
-        <div class="col s12 m6 l4">
-          <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                alt="Brownborg Studios logo"
-                src="/assets/img/brownborg-studios.jpg"
-                class="activator"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline"
-                >Website Portfolio<i
-                  class="mdi-navigation-more-vert right"
-                ></i
-              ></span>
-              <p>
-                Over a dozen powerful, easy-to-use CMS websites built for
-                local and international clients.
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title brown-text"
-                >Accomplishments<i class="mdi-navigation-close right"></i
-              ></span>
-              <ul>
-                <li><strong>Customized</strong> themes and plugins</li>
-                <li>Wordpress, Squarespace &amp; Tumblr</li>
-                <li>Fully <strong>responsive</strong> designs</li>
-                <li>Unique admin experiences</li>
-              </ul>
-              <div class="card-action">
-                <a
-                  aria-label="Visit Brownborg Studios website"
-                  href="http://brownborgstudios.com/portfolio"
-                  target="_blank"
-                  data-position="top"
-                  data-tooltip="View Online"
-                  class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                  ><i class="fa fa-external-link"></i
                 ></a>
               </div>
             </div>
@@ -1447,277 +652,130 @@ layout: layouts/portfolio
     <div class="container">
       <div class="card">
         <div class="card-content">
-          <h4 class="brown-text light">HTML</h4>
+          <h4 class="brown-text light">Machine Learning</h4>
           <div class="row text-center">
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/html5.png"
+                src="assets/img/pytorch.png"
                 class="responsive-img"
-              />HTML5
+              />Pytorch
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/react.png"
+                src="assets/img/tensorflow.png"
                 class="responsive-img"
-              />JSX
+              />Tensorflow
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/haml.png"
+                src="assets/img/keras.png"
                 class="responsive-img"
-              />Haml
+              />Keras
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/jade.png"
+                src="assets/img/pandas.png"
                 class="responsive-img"
-              />Jade
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/jekyll.png"
-                class="responsive-img"
-              />Jekyll
+              />Pandas
             </div>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-content">
-          <h4 class="brown-text light">CSS</h4>
+          <h4 class="brown-text light">Full Stack</h4>
           <div class="row text-center">
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/css3.png"
-                class="responsive-img"
-              />CSS3
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/sass.png"
-                class="responsive-img"
-              />SASS
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/bootstrap.png"
-                class="responsive-img"
-              />Bootstrap
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/foundation.png"
-                class="responsive-img"
-              />Foundation
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/materialize.png"
-                class="responsive-img"
-              />Materialize
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h4 class="brown-text light">Javascript</h4>
-          <div class="row text-center">
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/react.png"
-                class="responsive-img"
-              />React
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/javascript.png"
-                class="responsive-img"
-              />Javascript
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/jquery.png"
-                class="responsive-img"
-              />jQuery
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/angular.png"
-                class="responsive-img"
-              />Angular
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/nodejs.png"
+                src="assets/img/nodejs.png"
                 class="responsive-img"
               />Node
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/ionic.png"
+                src="assets/img/flask.png"
                 class="responsive-img"
-              />Ionic
+              />Flask
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="assets/img/aws.png"
+                class="responsive-img"
+              />AWS
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="assets/img/react.png"
+                class="responsive-img"
+              />React
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="assets/img/javascript.png"
+                class="responsive-img"
+              />Javascript
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="assets/img/bootstrap.png"
+                class="responsive-img"
+              />Bootstrap
             </div>
           </div>
         </div>
       </div>
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-content">
           <h4 class="brown-text light">Back-End</h4>
           <div class="row text-center">
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/ruby.png"
+                src="assets/img/ruby.png"
                 class="responsive-img"
               />Ruby
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/rails.png"
+                src="assets/img/rails.png"
                 class="responsive-img"
               />Rails
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/minitest.png"
+                src="assets/img/minitest.png"
                 class="responsive-img"
               />Minitest
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/postgresql.png"
+                src="assets/img/postgresql.png"
                 class="responsive-img"
               />PostgreSQL
             </div>
             <div class="col s4 m2">
               <img
                 alt=""
-                src="/assets/img/mongodb.png"
+                src="assets/img/mongodb.png"
                 class="responsive-img"
               />MongoDB
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h4 class="brown-text light">Build Tools</h4>
-          <div class="row text-center">
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/webpack.png"
-                class="responsive-img"
-              />Webpack
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/gulp.png"
-                class="responsive-img"
-              />Gulp
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/grunt.png"
-                class="responsive-img"
-              />Grunt
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/bower.png"
-                class="responsive-img"
-              />Bower
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h4 class="brown-text light">CMS</h4>
-          <div class="row text-center">
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/wordpress.png"
-                class="responsive-img"
-              />Wordpress
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/tumblr.png"
-                class="responsive-img"
-              />Tumblr
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/squarespace.png"
-                class="responsive-img"
-              />Squarespace
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h4 class="brown-text light">Other</h4>
-          <div class="row text-center">
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/github.png"
-                class="responsive-img"
-              />Github
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/heroku.png"
-                class="responsive-img"
-              />Heroku
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/photoshop.png"
-                class="responsive-img"
-              />Photoshop
-            </div>
-            <div class="col s4 m2">
-              <img
-                alt=""
-                src="/assets/img/fcpx.png"
-                class="responsive-img"
-              />Final Cut Pro
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <section id="awards" class="section scrollspy">
@@ -1730,21 +788,25 @@ layout: layouts/portfolio
               <p>
                 <span class="card-title"
                   ><a
-                    href="http://startupinstitute.com"
+                    href="https://www.citadel.com/careers/the-data-open/"
                     target="_blank"
                     class="teal-text hoverline"
-                    >Student Choice Award</a
+                    >1st place</a
                   ></span
                 >
               </p>
               <p class="brown-text">
-                Startup Institute - Full Time Web Development | April 2017
+                Citadel SoCal Data Open | October 2019
               </p>
               <ul>
                 <li>
-                  Awarded by students in the Full-Time Web Development track
-                  to one instructor as recognition for "outstanding
-                  teaching, listening, mentoring."
+                  Analysed factors that lead to Brexit, discovering the level of susceptibility to automation as being a key factor
+                </li>
+                <li>
+                  Competed against 25 teams of mostly graduate students teams across South California in a data science competition
+                </li>
+                <li>
+                  Awarded $20,000 to be shared with my team of 4
                 </li>
               </ul>
             </div>
@@ -1756,143 +818,23 @@ layout: layouts/portfolio
               <p>
                 <span class="card-title"
                   ><a
-                    href="https://wespire.com"
+                    href="http://icho2015.msu.az/"
                     target="_blank"
                     class="teal-text hoverline"
-                    >Inspired By You Award</a
+                    >Silver Medal</a
                   ></span
                 >
               </p>
-              <p class="brown-text">WeSpire | June 2016</p>
+              <p class="brown-text">International Chemistry Olympiad | August 2015</p>
               <ul>
                 <li>
-                  Quarterly award given to a team member who exemplifies
-                  WeSpire's purpose, vision, and values, goes above and
-                  beyond in their role to make a particularly positive
-                  impact on the company.
+                  Selected to be one of the four people to represent Canada.
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="http://startupinstitute.com"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Owl Award</a
-                  ></span
-                >
-              </p>
-              <p class="brown-text">Startup Institute | April 2016</p>
-              <ul>
                 <li>
-                  Given to an alumnus who "continually gives back to the
-                  Startup Institute community with true humility, despite
-                  everyone knowing how awesome he is."
+                  Competed against the top chemistry students from around the world in theoretical and lab based exams.
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="http://www.rhdri.org"
-                    class="teal-text hoverline"
-                    >Honorable Mention</a
-                  ></span
-                >
-              </p>
-              <p class="brown-text">
-                West Philly Homebrew Competition | May 2013
-              </p>
-              <ul>
                 <li>
-                  Neightborhood beer enthusiasts voted on their favorite
-                  local home-brewed beer. “Goldilocks" won in the "People's
-                  Choice" category.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="https://www.sas.upenn.edu/news/congratulations-our-dean%E2%80%99s-scholars"
-                    target="_blank"
-                    class="teal-text hoverline"
-                    >Dean's Scholar</a
-                  ></span
-                >
-              </p>
-              <p class="brown-text">
-                University of Pennsylvania | April 2013
-              </p>
-              <ul>
-                <li>
-                  One of only 20 students in the School of Arts &amp;
-                  Sciences nominated by faculty for "outstanding academic
-                  achievement and intellectual promise."
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                <span class="card-title"
-                  ><a
-                    href="http://www.rhdri.org"
-                    class="teal-text hoverline"
-                    >Employee of the Year</a
-                  ></span
-                >
-              </p>
-              <p class="brown-text">RHD-RI | Aug 2011</p>
-              <ul>
-                <li>
-                  Nominated by management and coworkers for exceptional work
-                  ethic and dedication to clients.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                <span class="card-title"
-                  ><a href="http://upenn.edu" class="teal-text hoverline"
-                    >Most Valuable Staff</a
-                  ></span
-                >
-              </p>
-              <p class="brown-text">RHD-RI | Dec 2010</p>
-              <ul>
-                <li>
-                  Awarded to the staff that went above in beyond in
-                  preparation, effort, and sales at the Winter Art show.
+                  Mentored Team Canada in preparation for the 2016 international competition.
                 </li>
               </ul>
             </div>
@@ -1905,37 +847,32 @@ layout: layouts/portfolio
     <h3 class="page-title white-text teal">Education</h3>
     <div class="container">
       <div class="row">
-        <div class="col s12 m6">
+        <div class="col s12 m12">
           <div class="card">
             <div class="card-content">
-              <p>
-                <span class="card-title"
-                  ><a href="http://upenn.edu" class="teal-text hoverline"
-                    >University of Pennsylvania</a
-                  ></span
-                >
-              </p>
-              <p class="brown-text">Philadelphia, PA</p>
+              <div class="row">
+                <div class="col s12 m2">
+                  <a
+                    ><img
+                      alt="Caltech logo"
+                      src="assets/img/caltech-logo-torch.png"
+                      class="responsive-img center-block"
+                  /></a>
+                </div>
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"
+                      ><a href="http://caltech.edu" class="teal-text hoverline"
+                        >Caltech</a
+                      ></span
+                    >
+                  </p>
+                  <p class="brown-text">Pasadena, CA</p>
+                </div>
+              </div>
               <ul>
-                <li>B.A. in Psychology</li>
-                <li>Summa Cum Laude</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                <span class="card-title"
-                  ><a href="http://www.gwu.edu" class="teal-text hoverline"
-                    >George Washington University</a
-                  ></span
-                >
-              </p>
-              <p class="brown-text">Washington, D.C.</p>
-              <ul>
-                <li>B.A. candidate</li>
+                <li>B.S. in Computer Science, Minor in Data Science (3.9 GPA)</li>
+                <li>A Cappella, Ultimate Frisbee, Emergency Medical Responder, Student Waiter</li>
               </ul>
             </div>
           </div>
@@ -1948,91 +885,82 @@ layout: layouts/portfolio
     <div class="container">
       <p>
         <a
-          aria-label="Email Andrew"
-          href="mailto:andrew@andrewborstein.com"
+          aria-label="Email Alex"
           data-position="top"
-          data-tooltip="Email Andrew"
+          data-tooltip="Email Alex"
           class="btn-floating btn-large waves-effect waves-light brown tooltipped"
           ><i class="fa fa-envelope"></i
           ><a
-            aria-label="Email Andrew"
-            href="mailto:andrew@andrewborstein.com"
+            aria-label="Email Alex"
             class="hoverline"
-            >andrew@andrewborstein.com</a
+            >alex [dot] yy [dot] cui [at] gmail [dot] com</a
           ></a
         >
       </p>
       <p>
         <a
-          aria-label="View Andrew on GitHub"
-          href="http://github.com/andrewborstein"
+          id="contact-linkedin-icon"
+          aria-label="View Alex on LinkedIn"
+          href="http://linkedin.com/in/alex-cui-caltech"
           target="_blank"
           data-position="top"
-          data-tooltip="View Andrew on GitHub"
-          class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-          ><i class="fa fa-github"></i
-          ><a
-            aria-label="Andrew on Github"
-            href="http://github.com/andrewborstein"
-            class="hoverline"
-            >github.com/andrewborstein</a
-          ></a
-        >
-      </p>
-      <p>
-        <a
-          aria-label="View Andrew on LinkedIn"
-          href="http://linkedin.com/in/andrewborstein"
-          target="_blank"
-          data-position="top"
-          data-tooltip="View Andrew on LinkedIn"
+          data-tooltip="View Alex on LinkedIn"
           class="btn-floating btn-large waves-effect waves-light brown tooltipped"
           ><i class="fa fa-linkedin"></i
           ><a
-            aria-label="Andrew on LinkedIn"
-            href="http://linkedin.com/in/andrewborstein"
+            id="contact-linkedin"
+            aria-label="Alex on LinkedIn"
+            href="http://linkedin.com/in/alex-cui-caltech"
             class="hoverline"
-            >linkedin.com/in/andrewborstein</a
+            >linkedin.com/in/alex-cui-caltech</a
+          ></a
+        >
+      </p>
+      <p>
+        <a
+          id="contact-github-icon"
+          aria-label="View Alex on GitHub"
+          href="http://github.com/alexcdot"
+          target="_blank"
+          data-position="top"
+          data-tooltip="View Alex on GitHub"
+          class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+          ><i class="fa fa-github"></i
+          ><a
+            id="contact-github"
+            aria-label="Alex on Github"
+            href="http://github.com/alexcdot"
+            class="hoverline"
+            >github.com/alexcdot</a
+          ></a
+        >
+      </p>
+      <p>
+        <a
+          id="contact-devpost-icon"
+          aria-label="View Alex on Devpost"
+          href="http://devpost.com/alexcdot"
+          target="_blank"
+          data-position="top"
+          data-tooltip="View Alex on Devpost"
+          class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+          ><i class="fa fa-external-link"></i
+          ><a
+            id="contact-devpost"
+            aria-label="Alex on Devpost"
+            href="http://devpost.com/alexcdot"
+            class="hoverline"
+            >devpost.com/alexcdot</a
           ></a
         >
       </p>
     </div>
   </section>
-  <section id="blog" class="section scrollspy full-height">
+  <!-- <section id="blog" class="section scrollspy full-height">
     <h3 class="page-title white-text teal">Blog</h3>
     <div class="container">
       <h4 id="posts-2020">2020</h4>
       <ol aria-labelledby="posts-2020">
-        <li>
-          <a
-            class="hoverline"
-            href="/blog/moving-my-blog-to-eleventy-part-3/"
-            >Moving my blog to Eleventy, Part 3: Creating Layouts</a
-          >
-          <dl>
-            <dd>Published:</span>
-            <dt>
-              <time datetime="2020-06-25T00:00:00+00:00">
-                June 25, 2020
-              </time>
-            </dt>
-          </dl>
-        </li>
-        <li>
-          <a
-            class="hoverline"
-            href="/blog/moving-my-blog-to-eleventy-part-2/"
-            >Moving my blog to Eleventy, Part 2: Getting Started</a
-          >
-          <dl>
-            <dd>Published:</span>
-            <dt>
-              <time datetime="2020-05-13T00:00:00+00:00">
-                May 13, 2020
-              </time>
-            </dt>
-          </dl>
-        </li>
         <li>
           <a
             class="hoverline"
@@ -2049,25 +977,6 @@ layout: layouts/portfolio
           </dl>
         </li>
       </ol>
-
-      <h4 id="posts-2019">2019</h4>
-      <ol aria-labelledby="posts-2019">
-        <li>
-          <a
-            class="hoverline"
-            href="/blog/hello-world-and-why-im-blogging"
-            >Hello, world. And why I'm blogging.</a
-          >
-          <dl>
-            <dd>Published:</span>
-            <dt>
-              <time datetime="2019-09-02T00:00:00+00:00">
-                September 2, 2019
-              </time>
-            </dt>
-          </dl>
-        </li>
-      </ol>
     </div>
-  </section>
+  </section> -->
 </main>
