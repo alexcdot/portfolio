@@ -484,10 +484,18 @@ layout: layouts/portfolio
   <section id="projects" class="section scrollspy">
     <h3 class="page-title white-text teal">Projects</h3>
     <div class="container">
-      <div class="row">
+      <!--
+        Note to self: impossible to have properly sized
+        last row (table/grid)and equal height columns (flex) at the same time.
+
+        One possible solution is to never have a last row (either
+        all on one row or all their own columns), but that's not
+        scalable...
+      -->
+      <div class="row" style="display: table;">
         <!-- Caltech Robotics Team-->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset">
             <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
                 alt="Screenshot of Caltech Robotics Team"
@@ -495,7 +503,7 @@ layout: layouts/portfolio
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content"  style="height: 170px;">
+            <div class="card-content project-card-content"  style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >Caltech Robotics Team<i class="mdi-navigation-more-vert right"></i
               ></span>
@@ -523,7 +531,7 @@ layout: layouts/portfolio
               </ul>
               <div class="card-action"><a
                   aria-label="Visit our CRT website"
-                  href="https://http://crt.caltech.edu/"
+                  href="http://crt.caltech.edu/"
                   target="_blank"
                   data-position="top"
                   data-tooltip="View Source"
@@ -535,8 +543,8 @@ layout: layouts/portfolio
           </div>
         </div>
         <!-- Juntos -->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px;">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset;">
             <div class="card-image waves-effect waves-block waves-light  project-card-image" style="height: unset;">
               <img
                 alt="Screenshot of Juntos app"
@@ -544,12 +552,17 @@ layout: layouts/portfolio
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content" style="height: 170px;">
+            <div class="card-content project-card-content" style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >Juntos<i class="mdi-navigation-more-vert right"></i
               ></span>
               <p>
-                ML web app to generate photorealistic faces just from facial descriptors
+                ML web app to generate photorealistic faces just from facial descriptors.
+                Such as age,
+                <br>
+                hairline,
+                <br>
+                and smile.
               </p>
             </div>
             <div class="card-reveal">
@@ -593,8 +606,8 @@ layout: layouts/portfolio
           </div>
         </div>
         <!-- HyperControl -->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px;">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset;">
             <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
                 alt=" Control example"
@@ -602,7 +615,7 @@ layout: layouts/portfolio
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content" style="height: 170px;">
+            <div class="card-content project-card-content" style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >HyperControl<i class="mdi-navigation-more-vert right"></i
               ></span>
