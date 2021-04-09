@@ -15,23 +15,23 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
-    <title>Alex Cui | Full-Stack Front-End Developer</title>
+    <title>Alex Cui | ML Researcher</title>
     <!-- Open Graph-->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Alex Cui | Full-Stack Front-End Developer" />
-    <meta property="og:description" content="I want to make things that make a difference." />
+    <meta property="og:title" content="Alex Cui | ML Researcher" />
+    <meta property="og:description" content="I turn signal into insight." />
     <meta property="og:url" content="alexcui.ca" />
-    <meta property="og:site_name" content="Alex Cui | Full-Stack Front-End Developer" />
+    <meta property="og:site_name" content="Alex Cui | ML Researcher" />
     <meta property="article:publisher" content="alexcui.ca" />
     <meta property="og:image" content="" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@alexcdot" />
-    <meta name="twitter:title" content="Alex Cui | Full-Stack Front-End Developer" />
-    <meta name="twitter:description" content="I want to make things that make a difference." />
+    <meta name="twitter:title" content="Alex Cui | ML Researcher" />
+    <meta name="twitter:description" content="I turn signal into insight." />
     <meta name="twitter:url" content="alexcui.ca" />
     <meta name="author" content="Alex Cui" />
-    <meta name="description" content="I want to make things that make a difference." />
+    <meta name="description" content="I turn signal into insight." />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -151,6 +151,15 @@
     </li>
     <li class="bold">
       <a
+        aria-label="Navigate to the Research section"
+        href="#research"
+        class="waves-effect waves-dark cyan-text"
+        ><i class="fa fa-flask fa-lg"></i
+        ><span>Research</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
         aria-label="Navigate to the Projects section"
         href="#projects"
         class="waves-effect waves-dark indigo-text"
@@ -248,6 +257,15 @@
     </li>
     <li class="bold">
       <a
+        aria-label="Navigate to the Research section"
+        href="#research"
+        class="waves-effect waves-dark cyan-text"
+        ><i class="fa fa-flask fa-lg"></i
+        ><span>Research</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
         aria-label="Navigate to the Projects section"
         href="#projects"
         class="waves-effect waves-dark indigo-text"
@@ -337,7 +355,7 @@
           >Autonomous Robotics</a
         >&nbsp;//&nbsp;<a
           aria-label='Navigate to the research "Reisman Lab"'
-          href="#experience"
+          href="#reisman-lab-card"
           >Synthetic Chemistry and ML</a
         >&nbsp;//&nbsp;<a
           aria-label='Navigate to the article "Open Mind"'
@@ -351,7 +369,8 @@
     <h3 class="page-title white-text teal">Experience</h3>
     <div class="container">
       <!-- Uber ATG -->
-      <a id="uber-atg-card">
+      <div id="uber-atg-card">
+      </div>
       <div class="card">
         <div class="card-content">
           <div class="row">
@@ -384,14 +403,18 @@
           </p>
           <ul>
             <li>
-              Developed deep learning models in Pytorch to
-              predict more diverse motion prediction outcomes to
-              better anticipate edge cases for self driving vehicles
-              without worsening prediction speed or quality
+              I developed deep graph neural network models in Pytorch 
+              to predict rare and unsafe behavior by pedestrians and 
+              drivers and plan safer driving for autonomous vehicles, 
+              reducing the number of potential collisions while more 
+              accurate modelling behavior from prior state-of-art 
+              models. 
             </li>
             <li>
-              Optimized graph neural network’s loss function and
-              sampling procedure
+              To do this, I built new encoders and loss functions 
+              for sample-efficient, diverse, multimodal prediction. 
+              Currently, we are preparing a paper for conference 
+              publishing.
             </li>
           </ul>
         </div>
@@ -399,7 +422,7 @@
           <span>June 2020 - Sept 2020 | Toronto, CA</span>
         </div>
       </div>
-      </a>
+      <!-- </a> -->
       <!-- Facebook -->
       <div class="card">
         <div class="card-content">
@@ -450,6 +473,7 @@
           <span>June 2019 - Sept 2010 | Menlo Park, CA</span>
         </div>
       </div>
+      <!-- Kuna Systems -->
       <div class="card">
         <div class="card-content">
           <div class="row">
@@ -502,7 +526,8 @@
         </div>
       </div>
       <!-- Open Mind -->
-      <a id="open-mind-card">
+      <div id="open-mind-card">
+      </div>
       <div class="card">
         <div class="card-content">
           <div class="row">
@@ -595,13 +620,124 @@
       </div>
     </div>
   </section>
+  
+  <section id="research" class="section scrollspy">
+    <h3 class="page-title white-text teal">Research</h3>
+    <div class="container">
+      <!-- Uber ATG -->
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m2">
+              <a href="https://www.uber.com/ca/en/atg/" target="_blank"
+                ><img
+                  alt="Uber ATG logo"
+                  src="assets/img/uber-logo.png"
+                  class="responsive-img center-block"
+              /></a>
+            </div>
+            <div class="col s12 m10">
+              <p>
+                <span class="card-title"
+                  ><a
+                    href="https://www.uber.com/ca/en/atg/"
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >Uber ATG</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="role brown-text">Research Scientist Intern</div>
+          <p>
+            <em class="grey-text"
+              >Making self-driving cars a reality</em
+            >
+          </p>
+          <ul>
+            <li>
+              Developed deep learning models in Pytorch to
+              predict more diverse motion prediction outcomes to
+              better anticipate edge cases for self driving vehicles
+              without worsening prediction speed or quality
+            </li>
+            <li>
+              Optimized graph neural network’s loss function and
+              sampling procedure
+            </li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <span>June 2020 - Sept 2020 | Toronto, CA</span>
+        </div>
+      </div>
+      
+      <!-- Reisman Lab -->
+      <div id="reisman-lab-card">
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m2">
+              <a href="http://reismangroup.caltech.edu/" target="_blank"
+                ><img
+                  alt="Caltech logo"
+                  src="assets/img/caltech-logo-torch.png"
+                  class="responsive-img center-block"
+              /></a>
+            </div>
+            <div class="col s12 m10">
+              <p>
+                <span class="card-title"
+                  ><a
+                    href="http://reismangroup.caltech.edu/"
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >Reisman Lab</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <p>
+            <em class="grey-text"
+              >Graph neural networks for learning chemical reactivity</em
+            >
+          </p>
+          <ul>
+            <li>
+              Designed graph CNNs in Tensorflow to predict the best reagents for organic coupling reactions
+            </li>
+            <li>
+              Optimized yield prediction of several reaction types with data augmentation and semi-supervised graph embeddings
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2007.04275" target="_blank">Paper accepted at ICML 2020 GRL workshop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <span>Jan 2019 - Present | Pasadena, CA</span>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="projects" class="section scrollspy">
     <h3 class="page-title white-text teal">Projects</h3>
     <div class="container">
-      <div class="row">
+      <!--
+        Note to self: impossible to have properly sized
+        last row (table/grid)and equal height columns (flex) at the same time.
+
+        One possible solution is to never have a last row (either
+        all on one row or all their own columns), but that's not
+        scalable...
+      -->
+      <div class="row" style="display: table;">
         <!-- Caltech Robotics Team-->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset">
             <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
                 alt="Screenshot of Caltech Robotics Team"
@@ -609,7 +745,7 @@
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content"  style="height: 170px;">
+            <div class="card-content project-card-content"  style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >Caltech Robotics Team<i class="mdi-navigation-more-vert right"></i
               ></span>
@@ -637,7 +773,7 @@
               </ul>
               <div class="card-action"><a
                   aria-label="Visit our CRT website"
-                  href="https://http://crt.caltech.edu/"
+                  href="http://crt.caltech.edu/"
                   target="_blank"
                   data-position="top"
                   data-tooltip="View Source"
@@ -649,8 +785,8 @@
           </div>
         </div>
         <!-- Juntos -->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px;">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset;">
             <div class="card-image waves-effect waves-block waves-light  project-card-image" style="height: unset;">
               <img
                 alt="Screenshot of Juntos app"
@@ -658,12 +794,12 @@
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content" style="height: 170px;">
+            <div class="card-content project-card-content" style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >Juntos<i class="mdi-navigation-more-vert right"></i
               ></span>
               <p>
-                ML web app to generate photorealistic faces just from facial descriptors
+                ML web app to generate photorealistic faces just from facial descriptors.
               </p>
             </div>
             <div class="card-reveal">
@@ -707,8 +843,8 @@
           </div>
         </div>
         <!-- HyperControl -->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px;">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset;">
             <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
                 alt=" Control example"
@@ -716,7 +852,7 @@
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content" style="height: 170px;">
+            <div class="card-content project-card-content" style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >HyperControl<i class="mdi-navigation-more-vert right"></i
               ></span>
@@ -986,6 +1122,8 @@
               </div>
               <ul>
                 <li>B.S. in Computer Science, Minor in Data Science (3.9 GPA)</li>
+                <li>Teaching Assistant for CS 155 Machine Learning and Data Mining and CS156b Caltech COVID-19 Prediction
+                </li>
                 <li>A Cappella, Ultimate Frisbee, Emergency Medical Responder, Student Waiter</li>
               </ul>
             </div>

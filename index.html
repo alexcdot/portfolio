@@ -37,6 +37,15 @@ layout: layouts/portfolio
     </li>
     <li class="bold">
       <a
+        aria-label="Navigate to the Research section"
+        href="#research"
+        class="waves-effect waves-dark cyan-text"
+        ><i class="fa fa-flask fa-lg"></i
+        ><span>Research</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
         aria-label="Navigate to the Projects section"
         href="#projects"
         class="waves-effect waves-dark indigo-text"
@@ -134,6 +143,15 @@ layout: layouts/portfolio
     </li>
     <li class="bold">
       <a
+        aria-label="Navigate to the Research section"
+        href="#research"
+        class="waves-effect waves-dark cyan-text"
+        ><i class="fa fa-flask fa-lg"></i
+        ><span>Research</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
         aria-label="Navigate to the Projects section"
         href="#projects"
         class="waves-effect waves-dark indigo-text"
@@ -211,7 +229,7 @@ layout: layouts/portfolio
         </h2>
       </blockquote>
       <p>
-        I enjoy using the power of data-based problem solving to tackle both global problems and new challenges where we're just hit the tip of the iceberg.
+        I enjoy using the power of data-based problem solving to tackle both global problems and new challenges where we've just hit the tip of the iceberg.
       </p>
       </p>
         I believe in having a T-shaped skill set - being able to dig deep and develop new machine learning approaches, while also having a versatile full-stack skill set to bring ideas into life.
@@ -223,7 +241,7 @@ layout: layouts/portfolio
           >Autonomous Robotics</a
         >&nbsp;//&nbsp;<a
           aria-label='Navigate to the research "Reisman Lab"'
-          href="#experience"
+          href="#reisman-lab-card"
           >Synthetic Chemistry and ML</a
         >&nbsp;//&nbsp;<a
           aria-label='Navigate to the article "Open Mind"'
@@ -237,7 +255,8 @@ layout: layouts/portfolio
     <h3 class="page-title white-text teal">Experience</h3>
     <div class="container">
       <!-- Uber ATG -->
-      <a id="uber-atg-card">
+      <div id="uber-atg-card">
+      </div>
       <div class="card">
         <div class="card-content">
           <div class="row">
@@ -270,14 +289,18 @@ layout: layouts/portfolio
           </p>
           <ul>
             <li>
-              Developed deep learning models in Pytorch to
-              predict more diverse motion prediction outcomes to
-              better anticipate edge cases for self driving vehicles
-              without worsening prediction speed or quality
+              I developed deep graph neural network models in Pytorch 
+              to predict rare and unsafe behavior by pedestrians and 
+              drivers and plan safer driving for autonomous vehicles, 
+              reducing the number of potential collisions while more 
+              accurate modelling behavior from prior state-of-art 
+              models. 
             </li>
             <li>
-              Optimized graph neural network’s loss function and
-              sampling procedure
+              To do this, I built new encoders and loss functions 
+              for sample-efficient, diverse, multimodal prediction. 
+              Currently, we are preparing a paper for conference 
+              publishing.
             </li>
           </ul>
         </div>
@@ -285,7 +308,7 @@ layout: layouts/portfolio
           <span>June 2020 - Sept 2020 | Toronto, CA</span>
         </div>
       </div>
-      </a>
+      <!-- </a> -->
       <!-- Facebook -->
       <div class="card">
         <div class="card-content">
@@ -336,6 +359,7 @@ layout: layouts/portfolio
           <span>June 2019 - Sept 2010 | Menlo Park, CA</span>
         </div>
       </div>
+      <!-- Kuna Systems -->
       <div class="card">
         <div class="card-content">
           <div class="row">
@@ -388,7 +412,8 @@ layout: layouts/portfolio
         </div>
       </div>
       <!-- Open Mind -->
-      <a id="open-mind-card">
+      <div id="open-mind-card">
+      </div>
       <div class="card">
         <div class="card-content">
           <div class="row">
@@ -478,6 +503,109 @@ layout: layouts/portfolio
           </ul>
         </div>
         <div class="card-action"><span>Nov 2017 - Sept 2018 | Pasadena, CA</span></div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="research" class="section scrollspy">
+    <h3 class="page-title white-text teal">Research</h3>
+    <div class="container">
+      <!-- Uber ATG -->
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m2">
+              <a href="https://www.uber.com/ca/en/atg/" target="_blank"
+                ><img
+                  alt="Uber ATG logo"
+                  src="assets/img/uber-logo.png"
+                  class="responsive-img center-block"
+              /></a>
+            </div>
+            <div class="col s12 m10">
+              <p>
+                <span class="card-title"
+                  ><a
+                    href="https://www.uber.com/ca/en/atg/"
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >Uber ATG</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="role brown-text">Research Scientist Intern</div>
+          <p>
+            <em class="grey-text"
+              >Making self-driving cars a reality</em
+            >
+          </p>
+          <ul>
+            <li>
+              Developed deep learning models in Pytorch to
+              predict more diverse motion prediction outcomes to
+              better anticipate edge cases for self driving vehicles
+              without worsening prediction speed or quality
+            </li>
+            <li>
+              Optimized graph neural network’s loss function and
+              sampling procedure
+            </li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <span>June 2020 - Sept 2020 | Toronto, CA</span>
+        </div>
+      </div>
+      
+      <!-- Reisman Lab -->
+      <div id="reisman-lab-card">
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m2">
+              <a href="http://reismangroup.caltech.edu/" target="_blank"
+                ><img
+                  alt="Caltech logo"
+                  src="assets/img/caltech-logo-torch.png"
+                  class="responsive-img center-block"
+              /></a>
+            </div>
+            <div class="col s12 m10">
+              <p>
+                <span class="card-title"
+                  ><a
+                    href="http://reismangroup.caltech.edu/"
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >Reisman Lab</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <p>
+            <em class="grey-text"
+              >Graph neural networks for learning chemical reactivity</em
+            >
+          </p>
+          <ul>
+            <li>
+              Designed graph CNNs in Tensorflow to predict the best reagents for organic coupling reactions
+            </li>
+            <li>
+              Optimized yield prediction of several reaction types with data augmentation and semi-supervised graph embeddings
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2007.04275" target="_blank">Paper accepted at ICML 2020 GRL workshop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <span>Jan 2019 - Present | Pasadena, CA</span>
+        </div>
       </div>
     </div>
   </section>
@@ -880,6 +1008,8 @@ layout: layouts/portfolio
               </div>
               <ul>
                 <li>B.S. in Computer Science, Minor in Data Science (3.9 GPA)</li>
+                <li>Teaching Assistant for CS 155 Machine Learning and Data Mining and CS156b Caltech COVID-19 Prediction
+                </li>
                 <li>A Cappella, Ultimate Frisbee, Emergency Medical Responder, Student Waiter</li>
               </ul>
             </div>
