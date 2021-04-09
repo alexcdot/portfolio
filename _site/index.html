@@ -15,23 +15,23 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
-    <title>Alex Cui | Full-Stack Front-End Developer</title>
+    <title>Alex Cui | ML Researcher</title>
     <!-- Open Graph-->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Alex Cui | Full-Stack Front-End Developer" />
-    <meta property="og:description" content="I want to make things that make a difference." />
+    <meta property="og:title" content="Alex Cui | ML Researcher" />
+    <meta property="og:description" content="I turn signal into insight." />
     <meta property="og:url" content="alexcui.ca" />
-    <meta property="og:site_name" content="Alex Cui | Full-Stack Front-End Developer" />
+    <meta property="og:site_name" content="Alex Cui | ML Researcher" />
     <meta property="article:publisher" content="alexcui.ca" />
     <meta property="og:image" content="" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@alexcdot" />
-    <meta name="twitter:title" content="Alex Cui | Full-Stack Front-End Developer" />
-    <meta name="twitter:description" content="I want to make things that make a difference." />
+    <meta name="twitter:title" content="Alex Cui | ML Researcher" />
+    <meta name="twitter:description" content="I turn signal into insight." />
     <meta name="twitter:url" content="alexcui.ca" />
     <meta name="author" content="Alex Cui" />
-    <meta name="description" content="I want to make things that make a difference." />
+    <meta name="description" content="I turn signal into insight." />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -598,10 +598,18 @@
   <section id="projects" class="section scrollspy">
     <h3 class="page-title white-text teal">Projects</h3>
     <div class="container">
-      <div class="row">
+      <!--
+        Note to self: impossible to have properly sized
+        last row (table/grid)and equal height columns (flex) at the same time.
+
+        One possible solution is to never have a last row (either
+        all on one row or all their own columns), but that's not
+        scalable...
+      -->
+      <div class="row" style="display: table;">
         <!-- Caltech Robotics Team-->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset">
             <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
                 alt="Screenshot of Caltech Robotics Team"
@@ -609,7 +617,7 @@
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content"  style="height: 170px;">
+            <div class="card-content project-card-content"  style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >Caltech Robotics Team<i class="mdi-navigation-more-vert right"></i
               ></span>
@@ -637,7 +645,7 @@
               </ul>
               <div class="card-action"><a
                   aria-label="Visit our CRT website"
-                  href="https://http://crt.caltech.edu/"
+                  href="http://crt.caltech.edu/"
                   target="_blank"
                   data-position="top"
                   data-tooltip="View Source"
@@ -649,8 +657,8 @@
           </div>
         </div>
         <!-- Juntos -->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px;">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset;">
             <div class="card-image waves-effect waves-block waves-light  project-card-image" style="height: unset;">
               <img
                 alt="Screenshot of Juntos app"
@@ -658,12 +666,12 @@
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content" style="height: 170px;">
+            <div class="card-content project-card-content" style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >Juntos<i class="mdi-navigation-more-vert right"></i
               ></span>
               <p>
-                ML web app to generate photorealistic faces just from facial descriptors
+                ML web app to generate photorealistic faces just from facial descriptors.
               </p>
             </div>
             <div class="card-reveal">
@@ -707,8 +715,8 @@
           </div>
         </div>
         <!-- HyperControl -->
-        <div class="col s12 m6 l4">
-          <div class="card medium project-card" style="height: 470px;">
+        <div class="col s12 m6 l4" style="display: table-cell;">
+          <div class="card medium project-card" style="height: unset;">
             <div class="card-image waves-effect waves-block waves-light project-card-image" style="height: unset;">
               <img
                 alt=" Control example"
@@ -716,7 +724,7 @@
                 class="activator"
               />
             </div>
-            <div class="card-content project-card-content" style="height: 170px;">
+            <div class="card-content project-card-content" style="height: unset;">
               <span class="card-title activator teal-text hoverline"
                 >HyperControl<i class="mdi-navigation-more-vert right"></i
               ></span>
